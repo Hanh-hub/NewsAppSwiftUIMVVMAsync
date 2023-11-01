@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDCC78222AE85E7E007F2DC0 /* ComcastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78212AE85E7E007F2DC0 /* ComcastApp.swift */; };
+		FDCC78242AE85E7E007F2DC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78232AE85E7E007F2DC0 /* ContentView.swift */; };
+		FDCC78262AE85E81007F2DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCC78252AE85E81007F2DC0 /* Assets.xcassets */; };
+		FDCC78292AE85E81007F2DC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDCC78282AE85E81007F2DC0 /* Preview Assets.xcassets */; };
+		FDCC78382AE85E81007F2DC0 /* ComcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78372AE85E81007F2DC0 /* ComcastTests.swift */; };
+		FDCC78422AE85E81007F2DC0 /* ComcastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78412AE85E81007F2DC0 /* ComcastUITests.swift */; };
+		FDCC78442AE85E81007F2DC0 /* ComcastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78432AE85E81007F2DC0 /* ComcastUITestsLaunchTests.swift */; };
+		FDCC78582AE85F52007F2DC0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78572AE85F52007F2DC0 /* NetworkService.swift */; };
+		FDCC785A2AE86923007F2DC0 /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78592AE86923007F2DC0 /* ApiEndPoint.swift */; };
+		FDCC785C2AE8699F007F2DC0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC785B2AE8699F007F2DC0 /* NetworkError.swift */; };
+		FDCC785F2AE86D40007F2DC0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC785E2AE86D3F007F2DC0 /* Model.swift */; };
+		FDCC78612AE8DCC9007F2DC0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78602AE8DCC9007F2DC0 /* ViewModel.swift */; };
+		FDCC78632AE8DD10007F2DC0 /* Extension+Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78622AE8DD10007F2DC0 /* Extension+Photo.swift */; };
+		FDCC78672AE8DD51007F2DC0 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC78662AE8DD51007F2DC0 /* AsyncImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDCC78342AE85E81007F2DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDCC78162AE85E7E007F2DC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDCC781D2AE85E7E007F2DC0;
+			remoteInfo = Comcast;
+		};
+		FDCC783E2AE85E81007F2DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDCC78162AE85E7E007F2DC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDCC781D2AE85E7E007F2DC0;
+			remoteInfo = Comcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDCC781E2AE85E7E007F2DC0 /* Comcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCC78212AE85E7E007F2DC0 /* ComcastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComcastApp.swift; sourceTree = "<group>"; };
+		FDCC78232AE85E7E007F2DC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDCC78252AE85E81007F2DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDCC78282AE85E81007F2DC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDCC78332AE85E81007F2DC0 /* ComcastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComcastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCC78372AE85E81007F2DC0 /* ComcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComcastTests.swift; sourceTree = "<group>"; };
+		FDCC783D2AE85E81007F2DC0 /* ComcastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComcastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCC78412AE85E81007F2DC0 /* ComcastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComcastUITests.swift; sourceTree = "<group>"; };
+		FDCC78432AE85E81007F2DC0 /* ComcastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComcastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDCC78572AE85F52007F2DC0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FDCC78592AE86923007F2DC0 /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
+		FDCC785B2AE8699F007F2DC0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FDCC785E2AE86D3F007F2DC0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FDCC78602AE8DCC9007F2DC0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FDCC78622AE8DD10007F2DC0 /* Extension+Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Photo.swift"; sourceTree = "<group>"; };
+		FDCC78662AE8DD51007F2DC0 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDCC781B2AE85E7E007F2DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCC78302AE85E81007F2DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCC783A2AE85E81007F2DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDCC78152AE85E7E007F2DC0 = {
+			isa = PBXGroup;
+			children = (
+				FDCC78202AE85E7E007F2DC0 /* Comcast */,
+				FDCC78362AE85E81007F2DC0 /* ComcastTests */,
+				FDCC78402AE85E81007F2DC0 /* ComcastUITests */,
+				FDCC781F2AE85E7E007F2DC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDCC781F2AE85E7E007F2DC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC781E2AE85E7E007F2DC0 /* Comcast.app */,
+				FDCC78332AE85E81007F2DC0 /* ComcastTests.xctest */,
+				FDCC783D2AE85E81007F2DC0 /* ComcastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDCC78202AE85E7E007F2DC0 /* Comcast */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC785D2AE86BCD007F2DC0 /* Model */,
+				FDCC78562AE85F19007F2DC0 /* Network */,
+				FDCC78552AE85EFD007F2DC0 /* Ultitilies */,
+				FDCC78542AE85ED5007F2DC0 /* ViewModels */,
+				FDCC78532AE85ED3007F2DC0 /* View */,
+				FDCC78502AE85EA9007F2DC0 /* Extensions */,
+				FDCC78212AE85E7E007F2DC0 /* ComcastApp.swift */,
+				FDCC78252AE85E81007F2DC0 /* Assets.xcassets */,
+				FDCC78272AE85E81007F2DC0 /* Preview Content */,
+			);
+			path = Comcast;
+			sourceTree = "<group>";
+		};
+		FDCC78272AE85E81007F2DC0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC78282AE85E81007F2DC0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDCC78362AE85E81007F2DC0 /* ComcastTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC78372AE85E81007F2DC0 /* ComcastTests.swift */,
+			);
+			path = ComcastTests;
+			sourceTree = "<group>";
+		};
+		FDCC78402AE85E81007F2DC0 /* ComcastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC78412AE85E81007F2DC0 /* ComcastUITests.swift */,
+				FDCC78432AE85E81007F2DC0 /* ComcastUITestsLaunchTests.swift */,
+			);
+			path = ComcastUITests;
+			sourceTree = "<group>";
+		};
+		FDCC78502AE85EA9007F2DC0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC78622AE8DD10007F2DC0 /* Extension+Photo.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDCC78532AE85ED3007F2DC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC78662AE8DD51007F2DC0 /* AsyncImageView.swift */,
+				FDCC78232AE85E7E007F2DC0 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDCC78542AE85ED5007F2DC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC78602AE8DCC9007F2DC0 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FDCC78552AE85EFD007F2DC0 /* Ultitilies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ultitilies;
+			sourceTree = "<group>";
+		};
+		FDCC78562AE85F19007F2DC0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC78592AE86923007F2DC0 /* ApiEndPoint.swift */,
+				FDCC78572AE85F52007F2DC0 /* NetworkService.swift */,
+				FDCC785B2AE8699F007F2DC0 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FDCC785D2AE86BCD007F2DC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDCC785E2AE86D3F007F2DC0 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDCC781D2AE85E7E007F2DC0 /* Comcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDCC78472AE85E81007F2DC0 /* Build configuration list for PBXNativeTarget "Comcast" */;
+			buildPhases = (
+				FDCC781A2AE85E7E007F2DC0 /* Sources */,
+				FDCC781B2AE85E7E007F2DC0 /* Frameworks */,
+				FDCC781C2AE85E7E007F2DC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Comcast;
+			productName = Comcast;
+			productReference = FDCC781E2AE85E7E007F2DC0 /* Comcast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDCC78322AE85E81007F2DC0 /* ComcastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDCC784A2AE85E81007F2DC0 /* Build configuration list for PBXNativeTarget "ComcastTests" */;
+			buildPhases = (
+				FDCC782F2AE85E81007F2DC0 /* Sources */,
+				FDCC78302AE85E81007F2DC0 /* Frameworks */,
+				FDCC78312AE85E81007F2DC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDCC78352AE85E81007F2DC0 /* PBXTargetDependency */,
+			);
+			name = ComcastTests;
+			productName = ComcastTests;
+			productReference = FDCC78332AE85E81007F2DC0 /* ComcastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDCC783C2AE85E81007F2DC0 /* ComcastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDCC784D2AE85E81007F2DC0 /* Build configuration list for PBXNativeTarget "ComcastUITests" */;
+			buildPhases = (
+				FDCC78392AE85E81007F2DC0 /* Sources */,
+				FDCC783A2AE85E81007F2DC0 /* Frameworks */,
+				FDCC783B2AE85E81007F2DC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDCC783F2AE85E81007F2DC0 /* PBXTargetDependency */,
+			);
+			name = ComcastUITests;
+			productName = ComcastUITests;
+			productReference = FDCC783D2AE85E81007F2DC0 /* ComcastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDCC78162AE85E7E007F2DC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FDCC781D2AE85E7E007F2DC0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FDCC78322AE85E81007F2DC0 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FDCC781D2AE85E7E007F2DC0;
+					};
+					FDCC783C2AE85E81007F2DC0 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FDCC781D2AE85E7E007F2DC0;
+					};
+				};
+			};
+			buildConfigurationList = FDCC78192AE85E7E007F2DC0 /* Build configuration list for PBXProject "Comcast" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDCC78152AE85E7E007F2DC0;
+			productRefGroup = FDCC781F2AE85E7E007F2DC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDCC781D2AE85E7E007F2DC0 /* Comcast */,
+				FDCC78322AE85E81007F2DC0 /* ComcastTests */,
+				FDCC783C2AE85E81007F2DC0 /* ComcastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDCC781C2AE85E7E007F2DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDCC78292AE85E81007F2DC0 /* Preview Assets.xcassets in Resources */,
+				FDCC78262AE85E81007F2DC0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCC78312AE85E81007F2DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCC783B2AE85E81007F2DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDCC781A2AE85E7E007F2DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDCC78582AE85F52007F2DC0 /* NetworkService.swift in Sources */,
+				FDCC785C2AE8699F007F2DC0 /* NetworkError.swift in Sources */,
+				FDCC78632AE8DD10007F2DC0 /* Extension+Photo.swift in Sources */,
+				FDCC78242AE85E7E007F2DC0 /* ContentView.swift in Sources */,
+				FDCC78222AE85E7E007F2DC0 /* ComcastApp.swift in Sources */,
+				FDCC78672AE8DD51007F2DC0 /* AsyncImageView.swift in Sources */,
+				FDCC785A2AE86923007F2DC0 /* ApiEndPoint.swift in Sources */,
+				FDCC785F2AE86D40007F2DC0 /* Model.swift in Sources */,
+				FDCC78612AE8DCC9007F2DC0 /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCC782F2AE85E81007F2DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDCC78382AE85E81007F2DC0 /* ComcastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDCC78392AE85E81007F2DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDCC78422AE85E81007F2DC0 /* ComcastUITests.swift in Sources */,
+				FDCC78442AE85E81007F2DC0 /* ComcastUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDCC78352AE85E81007F2DC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDCC781D2AE85E7E007F2DC0 /* Comcast */;
+			targetProxy = FDCC78342AE85E81007F2DC0 /* PBXContainerItemProxy */;
+		};
+		FDCC783F2AE85E81007F2DC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDCC781D2AE85E7E007F2DC0 /* Comcast */;
+			targetProxy = FDCC783E2AE85E81007F2DC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FDCC78452AE85E81007F2DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDCC78462AE85E81007F2DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDCC78482AE85E81007F2DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Comcast/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.Comcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDCC78492AE85E81007F2DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Comcast/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.Comcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDCC784B2AE85E81007F2DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.ComcastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comcast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Comcast";
+			};
+			name = Debug;
+		};
+		FDCC784C2AE85E81007F2DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.ComcastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comcast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Comcast";
+			};
+			name = Release;
+		};
+		FDCC784E2AE85E81007F2DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.ComcastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Comcast;
+			};
+			name = Debug;
+		};
+		FDCC784F2AE85E81007F2DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.ComcastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Comcast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDCC78192AE85E7E007F2DC0 /* Build configuration list for PBXProject "Comcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDCC78452AE85E81007F2DC0 /* Debug */,
+				FDCC78462AE85E81007F2DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDCC78472AE85E81007F2DC0 /* Build configuration list for PBXNativeTarget "Comcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDCC78482AE85E81007F2DC0 /* Debug */,
+				FDCC78492AE85E81007F2DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDCC784A2AE85E81007F2DC0 /* Build configuration list for PBXNativeTarget "ComcastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDCC784B2AE85E81007F2DC0 /* Debug */,
+				FDCC784C2AE85E81007F2DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDCC784D2AE85E81007F2DC0 /* Build configuration list for PBXNativeTarget "ComcastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDCC784E2AE85E81007F2DC0 /* Debug */,
+				FDCC784F2AE85E81007F2DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDCC78162AE85E7E007F2DC0 /* Project object */;
+}
